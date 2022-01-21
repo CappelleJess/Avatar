@@ -10,7 +10,6 @@ var fabriccolors = ["545454","65c9ff","5199e4","25557c","e6e6e6","929598","a7ffc
 var backgroundcolors = ["ffffff","f5f6eb","e5fde2","d5effd","d1d0fc","f7d0fc","d0d0d0"];
 var glasses = ["none","rambo","fancy","old","nerd","fancy2","harry"];
 var glassopacities = ["10","25","50","75","100"];
-var tattoos = ["non","harry","airbender","krilin","front","tribal","tribal2","throat"];
 var accesories = ["none","earphones","earring1","earring2","earring3"];
 var current_skincolor = "edb98a";
 var current_hairstyle = "longhair";
