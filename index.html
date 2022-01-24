@@ -7,12 +7,26 @@
 	<script type="text/javascript">
 		window.onload = function ()
 		{
+			//FACE
 			var charahead = new Image();
 			var charaheadnum = Math.floor(Math.random()*4)+1;
 			var charaheadname = "head" + charaheadnum + ".png";
 			charahead.src = charaheadname;
 
+			//EYES
+			var charaeyes = new Image();
+			var charaeyesnum = Math.floor(Math.random()*4)+1;
+			var charaeyesname = "eyes" + charaeyesnum + ".png";
+			charaeyes.src = charaeyesname;
+
+			//HEAD LOAD
 			charahead.onload = function()
+			{
+				buildchara();
+			}
+
+			//EYES LOAD
+			charaeyes.onload = function()
 			{
 				buildchara();
 			}
@@ -24,16 +38,22 @@
 				canvas.width = 400;
 				canvas.height = 400;
 
+				//DRAW HEAD
 				ctx.drawImage(charahead,((400-charahead.width)/2),50);
-				
+				//DRAW EYES
+				ctx.drawImage(charaeyes,((400-charaeyes.width)/2),50);
+
 			}
 		}
-
 
 	</script>
 </head>
 <body>
 	<div align="center">
+
+		<canvas id="canvas" style="border:1px solid #000000;"></canvas>
+		<br><br>
+		<button onClick="window.location.reload();">Générer !</button>
 
 	</div>
 
