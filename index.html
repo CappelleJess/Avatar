@@ -9,7 +9,58 @@
 </head>
 <body>
 	<div align="center">
-		<canvas id="canvas" width="700" height="700" style="border:3px solid salmon;"></canvas>
+		<canvas id="canvas" width="400" height="400" style="border:3px solid salmon;"></canvas>
+		<br><br>
+		<div class="container">
+<div class="picklist">
+	<div class="picklist_header">
+		<h4>title</h4>
+		<p>
+			<select class="form-control">
+				<option>Sélection</option>
+			</select>
+		</p>
+	</div>
+	<div class="picklist_body">
+		<div class="left-box">
+			<ul class="list">
+						<li class="list-item">list-item</li>
+			</ul>
+		</div>
+		<div class="center-box">
+			<ul class="list-btns">
+				<li class="list-item">
+					<button class="btn add-right">
+						<i class="mdi mdi-chevron-right"></i>
+					</button>
+				</li>
+				<li class="list-item">
+					<button class="btn addAll-right">
+						<i class="mdi mdi-chevron-double-right"></i>
+					</button>
+				</li>
+				<li class="list-item">
+					<button class="btn add-left">
+						<i class="mdi mdi-chevron-left"></i>
+					</button>
+				</li>
+				<li class="list-item">
+					<button class="btn addAll-left">
+						<i class="mdi mdi-chevron-double-left"></i>
+					</button>
+				</li>
+			</ul>
+
+		</div>
+		<div class="right-box">
+			<ul class="list">
+						<li class="list-item">list-item</li>
+			</ul>
+		</div>
+	</div>
+	<div class="picklist__footer"></div>
+</div>
+</div>
 		<br><br>
 		<button onClick="window.location.reload();">Générer !</button>
 		<button type="submit" onclick="window.open('file.doc')">Enregistrer</button>
