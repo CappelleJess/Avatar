@@ -11,7 +11,3 @@ button {
 button:hover {
   background: lightsalmon;
 }
-
-button:focus {
-  background: palevioletred;
-}
