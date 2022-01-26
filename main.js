@@ -100,8 +100,8 @@ window.onload = function ()
 			{
 				var canvas = document.getElementById('canvas');
 				var ctx = canvas.getContext('2');
-				canvas.width = 400;
-				canvas.height = 400;
+				canvas.width = 700;
+				canvas.height = 700;
 
 				//BACKGROUND COLOUR
 				var r = Math.floor(Math.random() * (255 - 100 - 1) + 100);
@@ -109,24 +109,24 @@ window.onload = function ()
 				var b = Math.floor(Math.random() * (255 - 100 - 1) + 100);
 				var bgcol = "#" + r.toString(16) + g.toString(16) + b.toString(16);
 				ctx.fillStyle = bgcol;
-				ctx.fillRect (0, 0, 400, 400);
+				ctx.fillRect (0, 0, 700, 700);
 
 				//DRAW BACKHAIR
-				ctx.drawImage(charabackhair,((400-charabackhair.width)/2),50);
+				ctx.drawImage(charabackhair,((700-charabackhair.width)/2),50);
 				//DRAW BODY
-				ctx.drawImage(charabody,((400-charabody.width)/2),50);
+				ctx.drawImage(charabody,((700-charabody.width)/2),50);
 				//DRAW FACE
-				ctx.drawImage(charahead,((400-charahead.width)/2),50);
+				ctx.drawImage(charahead,((700-charahead.width)/2),50);
 				//DRAW EYES
-				ctx.drawImage(charaeyes,((400-charaeyes.width)/2),50);
+				ctx.drawImage(charaeyes,((700-charaeyes.width)/2),50);
 				//DRAW EYEBROWS
-				ctx.drawImage(charaeyebrows,((400-charaeyebrows.width)/2),50);
+				ctx.drawImage(charaeyebrows,((700-charaeyebrows.width)/2),50);
 				//DRAW MOUTH
-				ctx.drawImage(charamouth,((400-charamouth.width)/2),50);
+				ctx.drawImage(charamouth,((700-charamouth.width)/2),50);
 				//DRAW NOSE
-				ctx.drawImage(charanose,((400-charanose.width)/2),50);
+				ctx.drawImage(charanose,((700-charanose.width)/2),50);
 				//DRAW FRONTHAIR
-				ctx.drawImage(charafronthair,((400-charafronthair.width)/2),50);
+				ctx.drawImage(charafronthair,((700-charafronthair.width)/2),50);
 
 			}
 		}
