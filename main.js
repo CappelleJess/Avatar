@@ -1,7 +1,7 @@
 window.onload = function ()
 		{
 			//BACKHAIR
-			var charabackhair = ["backhair1.png", "backhair2.png", "backhair3.png", "backhair4.png"];
+			var chara_backhair_array = ["backhair1.png", "backhair2.png", "backhair3.png", "backhair4.png"];
 
 			//BODY
 			var charabody = new Image();
@@ -46,8 +46,8 @@ window.onload = function ()
 			charafronthair.src = charafronthairname;
 
 			//BACKHAIR LOAD
-			function getcharabackhair(imgAr, path) {
-    		path = path || 'items/backhair';
+			function getCharaBackhair(imgAr, path) {
+    		path = path || 'Avatar/items/backhair';
     		var num = Math.floor( Math.random() * imgAr.length );
     		var img = imgAr[ num ];
     		var imgStr = '<img src=' + path + img + '" alt = "">';
@@ -61,7 +61,7 @@ window.onload = function ()
 			}
 
 			//FACE LOAD
-			charahead.onload = function()
+			charaface.onload = function()
 			{
 				buildchara();
 			}
