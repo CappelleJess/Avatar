@@ -46,8 +46,8 @@ window.onload = function ()
 			charafronthair.src = charafronthairname;
 
 			//BACKHAIR LOAD
-			function getCharaBackhair(imgAr, path) {
-    		path = path || 'Avatar/items/backhair';
+			function getRandomImage(imgAr, path) {
+    		path = path || 'Avatar/items/backhair/';
     		var num = Math.floor( Math.random() * imgAr.length );
     		var img = imgAr[ num ];
     		var imgStr = '<img src=' + path + img + '" alt = "">';
