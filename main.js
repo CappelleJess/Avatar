@@ -5,25 +5,25 @@ window.onload = function ()
 
 			//BODY
 			var charabody = new Image();
-			var charabodynum = Math.floor(Math.random()*4)+1;
+			var charabodynum = Math.floor(Math.random()*2)+1;
 			var charabodyname = "body" + charabodynum + ".png";
 			charabody.src = charabodyname;
 
 			//FACE
 			var charaface = new Image();
-			var charafacenum = Math.floor(Math.random()*4)+1;
+			var charafacenum = Math.floor(Math.random()*5)+1;
 			var charafacename = "face" + charafacenum + ".png";
 			charaface.src = charafacename;
 
 			//EYES
 			var charaeyes = new Image();
-			var charaeyesnum = Math.floor(Math.random()*4)+1;
+			var charaeyesnum = Math.floor(Math.random()*5)+1;
 			var charaeyesname = "eyes" + charaeyesnum + ".png";
 			charaeyes.src = charaeyesname;
 
 			//EYEBROWS
 			var charaeyebrows = new Image();
-			var charaeyebrowsnum = Math.floor(Math.random()*4)+1;
+			var charaeyebrowsnum = Math.floor(Math.random()*5)+1;
 			var charaeyebrowsname = "eyebrows" + charaeyebrowsnum + ".png";
 			charaeyebrows.src = charaeyebrowsname;
 
@@ -35,13 +35,13 @@ window.onload = function ()
 
 			//NOSE
 			var charanose = new Image();
-			var charanosenum = Math.floor(Math.random()*4)+1;
+			var charanosenum = Math.floor(Math.random()*5)+1;
 			var charanosename = "nose" + charanosenum + ".png";
 			charanose.src = charanosename;
 
 			//FRONTHAIR
 			var charafronthair = new Image();
-			var charafronthairnum = Math.floor(Math.random()*1)+1;
+			var charafronthairnum = Math.floor(Math.random()*4)+1;
 			var charafronthairname = "fronthair" + charafronthairnum + ".png";
 			charafronthair.src = charafronthairname;
 
