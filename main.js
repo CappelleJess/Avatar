@@ -1,97 +1,99 @@
+var ctx;
+
 window.onload = function ()
 		{
 			//BACKHAIR
-			var charabackhair = new Image();
-			var charabackhairnum = Math.floor(Math.random()*2)+1;
-			var charabackhairname = "body" + charabackhairnum + ".png";
-			charabackhair.src = charabackhairname;
+			var backhair = new Image();
+			var backhairnum = Math.floor(Math.random()*4)+1;
+			var backhairname = "items/backhair/backhair" + backhairnum + ".png";
+			backhair.src = backhairname;
 
 			//BODY
-			var charabody = new Image();
-			var charabodynum = Math.floor(Math.random()*2)+1;
-			var charabodyname = "body" + charabodynum + ".png";
-			charabody.src = charabodyname;
+			var body = new Image();
+			var bodynum = Math.floor(Math.random()*2)+1;
+			var bodyname = "body" + bodynum + ".png";
+			body.src = bodyname;
 
 			//FACE
-			var charaface = new Image();
-			var charafacenum = Math.floor(Math.random()*5)+1;
-			var charafacename = "face" + charafacenum + ".png";
-			charaface.src = charafacename;
+			var face = new Image();
+			var facenum = Math.floor(Math.random()*5)+1;
+			var facename = "face" + facenum + ".png";
+			face.src = facename;
 
 			//EYES
-			var charaeyes = new Image();
-			var charaeyesnum = Math.floor(Math.random()*5)+1;
-			var charaeyesname = "eyes" + charaeyesnum + ".png";
-			charaeyes.src = charaeyesname;
+			var eyes = new Image();
+			var eyesnum = Math.floor(Math.random()*5)+1;
+			var eyesname = "eyes" + eyesnum + ".png";
+			eyes.src = eyesname;
 
 			//EYEBROWS
-			var charaeyebrows = new Image();
-			var charaeyebrowsnum = Math.floor(Math.random()*5)+1;
-			var charaeyebrowsname = "eyebrows" + charaeyebrowsnum + ".png";
-			charaeyebrows.src = charaeyebrowsname;
+			var eyebrows = new Image();
+			var eyebrowsnum = Math.floor(Math.random()*5)+1;
+			var eyebrowsname = "eyebrows" + eyebrowsnum + ".png";
+			eyebrows.src = eyebrowsname;
 
 			//MOUTH
-			var charamouth = new Image();
-			var charamouthnum = Math.floor(Math.random()*4)+1;
-			var charamouthname = "mouth" + charamouthnum + ".png";
-			charamouth.src = charamouthname;
+			var mouth = new Image();
+			var mouthnum = Math.floor(Math.random()*4)+1;
+			var mouthname = "mouth" + mouthnum + ".png";
+			mouth.src = mouthname;
 
 			//NOSE
-			var charanose = new Image();
-			var charanosenum = Math.floor(Math.random()*5)+1;
-			var charanosename = "nose" + charanosenum + ".png";
-			charanose.src = charanosename;
+			var nose = new Image();
+			var nosenum = Math.floor(Math.random()*5)+1;
+			var nosename = "nose" + nosenum + ".png";
+			nose.src = nosename;
 
 			//FRONTHAIR
-			var charafronthair = new Image();
-			var charafronthairnum = Math.floor(Math.random()*4)+1;
-			var charafronthairname = "fronthair" + charafronthairnum + ".png";
-			charafronthair.src = charafronthairname;
+			var fronthair = new Image();
+			var fronthairnum = Math.floor(Math.random()*4)+1;
+			var fronthairname = "fronthair" + fronthairnum + ".png";
+			fronthair.src = fronthairname;
 
 			//BACKHAIR LOAD
-			charabackhair.onload = function()
+			backhair.onload = function()
 			{
 				buildchara();
 			}	
 
 			//BODY LOAD
-			charabody.onload = function()
+			body.onload = function()
 			{
 				buildchara();
 			}
 
 			//FACE LOAD
-			charaface.onload = function()
+			face.onload = function()
 			{
 				buildchara();
 			}
 
 			//EYES LOAD
-			charaeyes.onload = function()
+			eyes.onload = function()
 			{
 				buildchara();
 			}
 
 			//EYEBROWS LOAD
-			charaeyebrows.onload = function()
+			eyebrows.onload = function()
 			{
 				buildchara();
 			}
 
 			//MOUTH LOAD
-			charamouth.onload = function()
+			mouth.onload = function()
 			{
 				buildchara();
 			}
 
 			//NOSE LOAD
-			charanose.onload = function()
+			nose.onload = function()
 			{
 				buildchara();
 			}
 
 			//FRONTHAIR LOAD
-			charafronthair.onload = function()
+			fronthair.onload = function()
 			{
 				buildchara();
 			}
@@ -99,20 +101,20 @@ window.onload = function ()
 			function buildchara()
 			{
 				//DRAW BACKHAIR
-				ctx.drawImage(charabackhair,33, 71, 104, 124, 21, 20, 87, 104);
+				ctx.drawImage(backhair, 500, 500);
 				//DRAW BODY
-				ctx.drawImage(charabody,((500-charabody.width)/2),50);
+				ctx.drawImage(body,((500-charabody.width)/2),50);
 				//DRAW FACE
-				ctx.drawImage(charahead,((500-charahead.width)/2),50);
+				ctx.drawImage(head,((500-charahead.width)/2),50);
 				//DRAW EYES
-				ctx.drawImage(charaeyes,((500-charaeyes.width)/2),50);
+				ctx.drawImage(eyes,((500-charaeyes.width)/2),50);
 				//DRAW EYEBROWS
-				ctx.drawImage(charaeyebrows,((500-charaeyebrows.width)/2),50);
+				ctx.drawImage(eyebrows,((500-charaeyebrows.width)/2),50);
 				//DRAW MOUTH
-				ctx.drawImage(charamouth,((500-charamouth.width)/2),50);
+				ctx.drawImage(mouth,((500-charamouth.width)/2),50);
 				//DRAW NOSE
-				ctx.drawImage(charanose,((500-charanose.width)/2),50);
+				ctx.drawImage(nose,((500-charanose.width)/2),50);
 				//DRAW FRONTHAIR
-				ctx.drawImage(charafronthair,((500-charafronthair.width)/2),50);
+				ctx.drawImage(fronthair,((500-charafronthair.width)/2),50);
 			}
 		}

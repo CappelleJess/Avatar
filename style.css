@@ -14,11 +14,6 @@ button:hover {
   background: lightsalmon;
 }
 
-.picklist {
-  display: grid;
-  grid-template-areas: "header" "body" "footer";
-}
-
 header {
   grid-area: header;
 }
