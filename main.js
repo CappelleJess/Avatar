@@ -101,7 +101,7 @@ window.onload = function ()
 			function buildchara()
 			{
 				//DRAW BACKHAIR
-				ctx.drawImage(backhair, 500, 500);
+				ctx.drawImage(backhair,((500-charabody.width)/2),50);
 				//DRAW BODY
 				ctx.drawImage(body,((500-charabody.width)/2),50);
 				//DRAW FACE
