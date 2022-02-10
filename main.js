@@ -4,49 +4,43 @@ window.onload = function ()
 		{
 			//BACKHAIR
 			var backhair = new Image();
-			var backhairnum = Math.floor(Math.random()*4)+1;
+			var backhairnum = Math.floor(Math.random()*25)+1;
 			var backhairname = "items/backhair/backhair" + backhairnum + ".png";
 			backhair.src = backhairname;
 
 			//BODY
 			var body = new Image();
-			var bodynum = Math.floor(Math.random()*2)+1;
+			var bodynum = Math.floor(Math.random()*25)+1;
 			var bodyname = "items/body/body" + bodynum + ".png";
 			body.src = bodyname;
 
-			//FACE
-			var face = new Image();
-			var facenum = Math.floor(Math.random()*5)+1;
-			var facename = "items/face/face" + facenum + ".png";
-			face.src = facename;
-
 			//EYES
 			var eyes = new Image();
-			var eyesnum = Math.floor(Math.random()*5)+1;
+			var eyesnum = Math.floor(Math.random()*25)+1;
 			var eyesname = "items/eyes/eyes" + eyesnum + ".png";
 			eyes.src = eyesname;
 
 			//EYEBROWS
 			var eyebrows = new Image();
-			var eyebrowsnum = Math.floor(Math.random()*5)+1;
+			var eyebrowsnum = Math.floor(Math.random()*20)+1;
 			var eyebrowsname = "items/eyebrows/eyebrows" + eyebrowsnum + ".png";
 			eyebrows.src = eyebrowsname;
 
 			//MOUTH
 			var mouth = new Image();
-			var mouthnum = Math.floor(Math.random()*4)+1;
+			var mouthnum = Math.floor(Math.random()*25)+1;
 			var mouthname = "items/mouth/mouth" + mouthnum + ".png";
 			mouth.src = mouthname;
 
 			//NOSE
 			var nose = new Image();
-			var nosenum = Math.floor(Math.random()*5)+1;
+			var nosenum = Math.floor(Math.random()*4)+1;
 			var nosename = "items/nose/nose" + nosenum + ".png";
 			nose.src = nosename;
 
 			//FRONTHAIR
 			var fronthair = new Image();
-			var fronthairnum = Math.floor(Math.random()*4)+1;
+			var fronthairnum = Math.floor(Math.random()*25)+1;
 			var fronthairname = "items/fronthair/fronthair" + fronthairnum + ".png";
 			fronthair.src = fronthairname;
 
@@ -58,12 +52,6 @@ window.onload = function ()
 
 			//BODY LOAD
 			body.onload = function()
-			{
-				buildchara();
-			}
-
-			//FACE LOAD
-			face.onload = function()
 			{
 				buildchara();
 			}
@@ -107,8 +95,6 @@ window.onload = function ()
 				ctx.drawImage(backhair,((500-backhair.width)/2),50);
 				//DRAW BODY
 				ctx.drawImage(body,((500-body.width)/1),50);
-				//DRAW FACE
-				ctx.drawImage(head,((500-face.width)/2),50);
 				//DRAW EYES
 				ctx.drawImage(eyes,((500-eyes.width)/2),50);
 				//DRAW EYEBROWS
