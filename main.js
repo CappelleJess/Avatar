@@ -14,6 +14,12 @@ window.onload = function ()
 			var bodyname = "items/body/body" + bodynum + ".png";
 			body.src = bodyname;
 
+			//CLOTHES
+			var clothes = new Image();
+			var clothesnum = Math.floor(Math.random()*12)+1;
+			var clothesname = "items/clothes/clothes" + clothesnum + ".png";
+			clothes.src = clothesname;
+
 			//EYES
 			var eyes = new Image();
 			var eyesnum = Math.floor(Math.random()*25)+1;
@@ -56,6 +62,12 @@ window.onload = function ()
 				buildchara();
 			}
 
+			//CLOTHES LOAD
+			clothes.onload = function()
+			{
+				buildchara();
+			}
+
 			//EYES LOAD
 			eyes.onload = function()
 			{
@@ -92,18 +104,20 @@ window.onload = function ()
                 ctx = canvas.getContext('2d');
 
 				//DRAW BACKHAIR
-				ctx.drawImage(backhair,((500-backhair.width)/2),50);
+				ctx.drawImage(backhair,((500-backhair.width)/1),50);
 				//DRAW BODY
 				ctx.drawImage(body,((500-body.width)/1),50);
+				//DRAW CLOTHES
+				ctx.drawImage(clothes,((500-clothes.width)/1),50);
 				//DRAW EYES
-				ctx.drawImage(eyes,((500-eyes.width)/2),50);
+				ctx.drawImage(eyes,((500-eyes.width)/1),50);
 				//DRAW EYEBROWS
-				ctx.drawImage(eyebrows,((500-eyebrows.width)/2),50);
+				ctx.drawImage(eyebrows,((500-eyebrows.width)/1),50);
 				//DRAW MOUTH
-				ctx.drawImage(mouth,((500-mouth.width)/2),50);
+				ctx.drawImage(mouth,((500-mouth.width)/1),50);
 				//DRAW NOSE
-				ctx.drawImage(nose,((500-nose.width)/2),50);
+				ctx.drawImage(nose,((500-nose.width)/1),50);
 				//DRAW FRONTHAIR
-				ctx.drawImage(fronthair,((500-fronthair.width)/2),50);
+				ctx.drawImage(fronthair,((500-fronthair.width)/1),50);
 			}
 		}
