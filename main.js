@@ -104,20 +104,20 @@ window.onload = function ()
                 ctx = canvas.getContext('2d');
 
 				//DRAW BACKHAIR
-				ctx.drawImage(backhair,((500-backhair.width)/1),50);
+				ctx.drawImage(backhair, 0, 0);
 				//DRAW BODY
-				ctx.drawImage(body,((500-body.width)/1),50);
+				ctx.drawImage(body, 0, 0);
 				//DRAW CLOTHES
-				ctx.drawImage(clothes,((500-clothes.width)/1),50);
+				ctx.drawImage(clothes, 0, 0);
 				//DRAW EYES
-				ctx.drawImage(eyes,((500-eyes.width)/1),50);
+				ctx.drawImage(eyes, 0, 0);
 				//DRAW EYEBROWS
-				ctx.drawImage(eyebrows,((500-eyebrows.width)/1),50);
+				ctx.drawImage(eyebrows, 0, 0);
 				//DRAW MOUTH
-				ctx.drawImage(mouth,((500-mouth.width)/1),50);
+				ctx.drawImage(mouth, 0, 0);
 				//DRAW NOSE
-				ctx.drawImage(nose,((500-nose.width)/1),50);
+				ctx.drawImage(nose, 0, 0);
 				//DRAW FRONTHAIR
-				ctx.drawImage(fronthair,((500-fronthair.width)/1),50);
+				ctx.drawImage(fronthair, 0, 0);
 			}
 		}
