@@ -1,10 +1,8 @@
-var ctx;
-
 window.onload = function ()
 		{
 			//BACKHAIR
 			var backhair = new Image();
-			var backhairnum = Math.floor(Math.random()*25)+1;
+			var backhairnum = Math.floor(Math.random()*35)+1;
 			var backhairname = "items/backhair/backhair" + backhairnum + ".png";
 			backhair.src = backhairname;
 
@@ -22,7 +20,7 @@ window.onload = function ()
 
 			//EYES
 			var eyes = new Image();
-			var eyesnum = Math.floor(Math.random()*25)+1;
+			var eyesnum = Math.floor(Math.random()*30)+1;
 			var eyesname = "items/eyes/eyes" + eyesnum + ".png";
 			eyes.src = eyesname;
 
@@ -46,7 +44,7 @@ window.onload = function ()
 
 			//FRONTHAIR
 			var fronthair = new Image();
-			var fronthairnum = Math.floor(Math.random()*25)+1;
+			var fronthairnum = Math.floor(Math.random()*35)+1;
 			var fronthairname = "items/fronthair/fronthair" + fronthairnum + ".png";
 			fronthair.src = fronthairname;
 
