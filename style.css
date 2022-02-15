@@ -1,3 +1,15 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  margin-top: 50px;
+  color: #222;
+}
+
+canvas {
+    border: 2px solid #222; 
+    border-radius: 50%;
+}
+
 button {
   padding: 20px;
   margin: auto;
@@ -7,7 +19,7 @@ button {
   padding: 0 40px;
   background: salmon;
   border: none;
-  display: block;
+  display: block-none;
 }
 
 button:hover {
